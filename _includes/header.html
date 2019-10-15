@@ -1,0 +1,22 @@
+<!--
+I don't understand this file (copied from tutorial)
+TODO : play around, read tutorials, to understand this and then customise to my liking
+-->
+<aside>
+	<div class="container">
+		<nav>
+			<ul>
+{% for page in site.pages %} {% if page.title %}
+<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+{% endif %} {% endfor %}
+<li><a href="{{ "/blog" | prepend: site.baseurl }}">Blog</a></li>
+			</ul>
+			</li>
+			</ul>
+		</nav>
+	</div>
+</aside>
+
+<header>
+	<h1><a href="{{ site.baseurl }}">{{ site.title }}</a></h1>
+</header>
